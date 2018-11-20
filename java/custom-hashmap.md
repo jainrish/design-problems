@@ -9,7 +9,7 @@ interface CustomMap<K, V> {
 public class CustomHashMap<K,V> implements CustomMap<K,V> {
 	
 	class Entry<K,V>{
-		K key;
+		final K key;
 		V value;
 		Entry<K,V> next;
 		
